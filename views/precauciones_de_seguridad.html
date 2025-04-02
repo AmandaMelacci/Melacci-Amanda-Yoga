@@ -16,34 +16,15 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">Inicio</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
+          <button class="navbar-toggler"type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="./yoga_terapeutico.html"
-                  >Yoga Terapéutico</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./como_empezar_con_yoga.html"
-                  >Cómo empezar con Yoga</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./beneficios_del_yoga.html"
-                  >Beneficios del Yoga</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Precauciones de seguridad</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="./yoga_terapeutico.html">Yoga Terapéutico</a></li>
+              <li class="nav-item"><a class="nav-link" href="./como_empezar_con_yoga.html">Cómo empezar con Yoga</a></li>
+              <li class="nav-item"><a class="nav-link" href="./beneficios_del_yoga.html">Beneficios del Yoga</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#">Precauciones de seguridad</a></li>
             </ul>
           </div>
         </div>
@@ -117,16 +98,12 @@
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="card h-100">
-              <img
-                src="../img/9.png"
-                class="card-img-top"
-                alt="yoga prenatal"
-              />
+              <img src="../img/9.png" class="card-img-top" alt="yoga prenatal" />
               <div class="card-body">
                 <h5 class="card-title">Yoga Prenatal</h5>
                 <p class="card-text">
                   La transformación a ser mamá es una aventura muy personal, con las practicas del yoga buscamos un lugar de serenidad, 
-                  equilibrio y bienestar que permite superar cualquier desafío.</p>
+                  equilibrio y bienestar que permite superar cualquier desafío. El yoga nos trae al momento presente.</p>
                 <a href="../index.html" class="btn btn-primary">MAS INFO</a>
               </div>
             </div>
@@ -159,14 +136,25 @@
         </div>
       </section>
       <!-- Subscription -->
-      <div class="text-center mt-5">
-        <label for="suscribe">Suscribirse:</label>
-        <input type="checkbox" name="suscribe" id="suscribe" />
-        <input type="submit" value="Enviar" />
-      </div>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </main>
     <footer class="text-center mt-4">
-      <p>&copy; Copyright 2025 Amanda Melacci</p>
+      <h4>&copy; Copyright 2025 Amanda Melacci</h4>
     </footer>
     <!-- Bootstrap Script -->
     <script
