@@ -1,0 +1,27 @@
+.carousel-indicators button {
+    width: 10px;  
+    height: 10px; 
+  }     
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px;  
+    height: 30px;
+  }
+  .carousel-item {
+    img {
+      width: 450px; 
+      height: 450px;
+      object-fit: cover;  
+      margin: 0 auto;
+      max-width: 85%;  
+    }
+  }
+  button[type="submit"] {
+    background-color: #6db193;
+    border-color: #6db193;
+    
+    &:hover {
+      background-color: #5a9f80;
+      border-color: #5a9f80;
+    }
+  }

@@ -6,8 +6,6 @@
     padding: 0;
 }
 
-
-
 /* variables*/
 $main-background: rgb(161, 199, 187);
 $margin-top-footer: 0.5rem;
@@ -20,8 +18,7 @@ $color-h2:rgb(35, 139, 117);
     flex-direction: $direccion;
     justify-content: $jcontent;
     align-items: $align;
-}
-     
+} 
 /* extend */
 .img-square {
     width: 300px;
@@ -29,251 +26,18 @@ $color-h2:rgb(35, 139, 117);
     object-fit: cover;
     margin: 10px;
 }
-html,
-body {
-    background-color: rgb(161, 199, 187);
-    font-family: "Poppins", sans-serif;
-  }
+@import "variables";
 
-  h1 {
-    color: rgb(19, 117, 96);
-    text-align: center;
-    font-size: 40px;
-  }
+@import "header";
 
-  h2 {
-    color: rgb(35, 139, 117);
-    font-size: 30px;
-    margin: 10px;
-  }
-  
+@import "card";
 
-  p {
-    color: black;
-    font-size: 1.5em;
-    margin: 20px;
-  }
+@import "iframe";
 
-  h3 {
-    color: rgb(35, 139, 117);
-    margin: 30px;
-    text-align: center;
-  }
+@import "article";
 
-  article {
-    font-size: 15px;
-    color: black;
-    text-align: center;
-  }
+@import "footer";
+  
+@import "carousel";
 
-  @media screen and (max-width: 1024px) {
-    .grid-container {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  header {
-    nav.navbar {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      background-color: #abe9c5; // Color de fondo de la barra de navegación
-      padding: 1rem;
-  
-      .container-fluid {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-  
-      img {
-        width: 45px;
-        height: 45px;
-      }
-  
-      .navbar-brand {
-        font-size: 1.25rem;
-        font-weight: bold;
-        color: #333;
-        text-decoration: none;
-        &:hover {
-          color: #1bbba6;
-        }
-      }
-  
-      .navbar-toggler {
-        border: none;
-        &:focus {
-          box-shadow: none;
-        }
-      }
-  
-      .navbar-collapse {
-        .navbar-nav {
-          display: flex;
-          gap: 1rem;
-  
-          .nav-item {
-            .nav-link {
-                font-size: 1.25rem;
-                font-weight: bold;
-                color: #333;
-                text-decoration: none;
-              &:hover {
-                color: #1bbba6;
-              }
-            }
-            
-            .nav-link.active {
-              font-weight: italic;
-              color: #1bbba6;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  main.container {
-    text-align: center;
-    margin: 2rem auto;
-  
-    section {
-      margin-bottom: 2rem;
-  
-      h1{
-       color: rgb(19, 117, 96)
-      }
-      
-      h2 {
-        color:rgb(35, 139, 117);
-      }
-  
-      p {
-        color: #555;
-        line-height: 1.6;
-      }
-    }
-  
-    .d-flex {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-  
-      img {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        margin: 0.5rem;
-      }
-    }
-  
-    iframe {
-      margin-top: 1rem;
-      max-width: 100%;
-      border-radius: 8px;
-    }
-  
-    article {
-      a {
-        margin: 0 1rem;
-        color: #333;
-        font-size: 1rem;
-        &:hover {
-          color: #1bbba6;
-        }
-      }
-    }
-  
-    footer {
-        margin-top: 2rem;
-        text-align: center;
-    }
-        .h4 {
-          font-size: 15px;
-          color: #0f0f0f;
-          margin-top: 0.5rem;
-        }
-     }
-
-    .card {
-        .card-img-top {
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-        }
-      
-        .btn-primary {
-          background-color: rgba(35, 139, 117, 1);
-          border-color: rgba(35, 139, 117, 1);
-          &:hover {
-            background-color: darken(rgba(35, 139, 117, 1), 10%);
-            border-color: darken(rgba(35, 139, 117, 1), 10%);
-          }
-        }
-      }
-
-      .carousel-indicators button {
-        width: 10px;  
-        height: 10px; 
-      }
-      
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        width: 30px;  
-        height: 30px;
-      }
-      .carousel-item {
-        img {
-          width: 450px;  // Ajusta el tamaño según necesites
-          height: 450px;
-          object-fit: cover;  // Asegura que se ajusten bien sin deformarse
-          margin: 0 auto;
-          max-width: 85%;  // Ajusta el ancho máximo de las imágenes
-        }
-      }
-
-      button[type="submit"] {
-        background-color: rgba(35, 139, 117, 1);
-        border-color: rgba(35, 139, 117, 1);
-        
-        &:hover {
-          background-color: darken(rgba(35, 139, 117, 1), 10%);
-          border-color: darken(rgba(35, 139, 117, 1), 10%);
-        }
-      }
-
-      form {
-        max-width: 400px; // Define un ancho máximo para el formulario
-        margin: 0 auto; // Centra el formulario horizontalmente
-        padding: 1.5rem;
-        background-color: #f8f9fa; // Color de fondo opcional
-        border-radius: 8px; // Bordes redondeados
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // Sombra sutil
-      
-        .form-label {
-          font-size: 0.9rem; // Reduce el tamaño del texto de las etiquetas
-        }
-      
-        .form-control {
-          font-size: 0.9rem;
-          padding: 0.5rem;
-        }
-      
-        button[type="submit"] {
-          width: 100%; // Hace que el botón ocupe todo el ancho del formulario
-          background-color: rgba(35, 139, 117, 1);
-          border-color: rgba(35, 139, 117, 1);
-          &:hover {
-            background-color: darken(rgba(35, 139, 117, 1), 10%);
-            border-color: darken(rgba(35, 139, 117, 1), 10%);
-          }
-        }
-      }
+@import "form";

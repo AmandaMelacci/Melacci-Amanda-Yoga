@@ -1,0 +1,46 @@
+html,
+body {
+    background-color:  #fcedd8;
+    font-family: "Poppins", sans-serif;
+  }
+  h1 {
+    color: #5e473a;
+    text-align: center;
+    font-size: 40px;  
+  }
+  h2 {
+    color: #b27c66;
+    font-size: 30px;
+    margin: 10px;
+  }
+  p {
+    color: #444;
+    font-size: 1.5em;
+    margin: 20px;
+  }
+  h3 {
+    color: #b27c66;
+    margin: 30px;
+    text-align: center;
+  }
+
+  main.container {
+    text-align: center;
+    margin: 2rem auto;  
+  }
+    section {
+      margin-bottom: 2rem;
+  
+      h1{
+       color: #5e473a;
+      }
+      
+      h2 {
+        color:#6db193;
+      }
+  
+      p {
+        color: #444;
+        line-height: 1.6;
+      }
+    }  
