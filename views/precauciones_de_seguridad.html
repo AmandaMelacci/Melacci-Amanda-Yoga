@@ -2,21 +2,47 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi sitio web Yoga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <!-- AOS Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/om1.png" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Yoga Terapeutico</title>
+       <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }  
+      body {
+        display: flex;
+        flex-direction: column;
+      } 
+      main {
+        flex: 1;
+      }
+      footer h4 {
+      font-size: 15px;
+      color: #0f0f0f;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+      footer {
+        background-color: #f8f9fa;
+        padding: 10px 0;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-aos="fade-down" data-aos-delay="0">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">Inicio</a>
-          <button class="navbar-toggler"type="button" data-bs-toggle="collapse"data-bs-target="#navbarNav">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,135 +57,101 @@
       </nav>
     </header>
     <main class="container my-4">
-      <section>
+      <section data-aos="fade-up" data-aos-delay="100">
         <h1 class="text-center">Precauciones de seguridad</h1>
+      </section>
+      <section data-aos="fade-up" data-aos-delay="200">
         <p>
-          Como con cualquier forma de ejercicio, es importante hablar con su
-          médico antes de comenzar una práctica de yoga terapéutico.Si tiene una
-          lesión o enfermedad crónica, es especialmente importante consultar con
-          su médico y trabajar con un instructor de yoga terapéutico certificado
-          para garantizar que la práctica sea segura y efectiva.</p>
-          <p>
-          Además, es importante escuchar a su cuerpo durante la práctica y no forzarse más
-          allá de sus límites.Si siente dolor o incomodidad durante una postura,
-          es importante detenerse y buscar la ayuda de su instructor.
+          Como con cualquier forma de ejercicio, es importante hablar con su médico antes de comenzar una práctica de yoga terapéutico.
+          Si tiene una lesión o enfermedad crónica, es especialmente importante consultar con su médico y trabajar con un instructor de yoga terapéutico certificado para garantizar que la práctica sea segura y efectiva.
         </p>
-          <p>
-          Cuando se integra de forma cuidadosa y meditada en un plan sanitario global,
-          el yoga terapéutico puede aumentar los efectos de los tratamientos
-          médicos, los programas de rehabilitación y las estrategias de salud
-          preventiva.<br />Su papel como modalidad de apoyo y colaboración queda
-          aún más patente por su potencial para optimizar los resultados de la
-          recuperación, mejorar la adherencia al tratamiento y capacitar a las
-          personas para asumir un papel activo en su proceso de curación.</p>
-          <p>
-          Este enfoque integrador y centrado en la persona sirve como testimonio del
-          impacto polifacético y de largo alcance del yoga terapéutico como
-          modalidad dinámica y adaptable dentro del panorama sanitario
-          contemporáneo.
+        <p>
+          Además, es importante escuchar a su cuerpo durante la práctica y no forzarse más allá de sus límites.
+          Si siente dolor o incomodidad durante una postura, es importante detenerse y buscar la ayuda de su instructor.
         </p>
-        <!-- Image Group -->
-        <div class="d-flex flex-wrap justify-content-center my-4">
-          <img
-            src="../img/16.png"
-            alt="mujer 3 posiciones"
-            class="img-fluid m-2"
-            style="width: 300px; height: 300px; object-fit: cover"
-          />
-          <img
-            src="../img/18.png"
-            alt="hombre pose"
-            class="img-fluid m-2"
-            style="width: 300px; height: 300px; object-fit: cover"
-          />
-          <img
-            src="../img/17.png"
-            alt="mujer 3 poses"
-            class="img-fluid m-2"
-            style="width: 300px; height: 300px; object-fit: cover"
-          />
-        </div>
+        <p>
+          Cuando se integra de forma cuidadosa y meditada en un plan sanitario global, el yoga terapéutico puede aumentar los efectos de los tratamientos médicos, los programas de rehabilitación y las estrategias de salud preventiva.
+          <br />Su papel como modalidad de apoyo y colaboración queda aún más patente por su potencial para optimizar los resultados de la recuperación, mejorar la adherencia al tratamiento y capacitar a las personas para asumir un papel activo en su proceso de curación.
+        </p>
+        <p>
+          Este enfoque integrador y centrado en la persona sirve como testimonio del impacto polifacético y de largo alcance del yoga terapéutico como modalidad dinámica y adaptable dentro del panorama sanitario contemporáneo.
+        </p>
+      </section>
+      <div class="d-flex flex-wrap justify-content-center my-4">
+        <img src="../img/16.png" alt="mujer 3 posiciones" class="img-fluid m-2"
+          style="width: 300px; height: 300px; object-fit: cover;" data-aos="zoom-in" data-aos-delay="300" />
+        <img src="../img/18.png" alt="hombre pose" class="img-fluid m-2"
+          style="width: 300px; height: 300px; object-fit: cover;" data-aos="zoom-in" data-aos-delay="400" />
+        <img src="../img/17.png" alt="mujer 3 poses" class="img-fluid m-2"
+          style="width: 300px; height: 300px; object-fit: cover;" data-aos="zoom-in" data-aos-delay="500" />
+      </div>
+      <section data-aos="fade-up" data-aos-delay="600">
         <h2 class="text-center">Otros estilos de Yoga</h2>
         <p>
-          El yoga abarca una amplia variedad de prácticas, cada una con su
-          propio enfoque y metodología. Desde estilos suaves como yoga prenatal
-          para mujeres embarazadas que quieren seguir cuidando su cuerpo y mente
-          o dinámicos, como el acroyoga o yoga aereo, hasta otros más centrados
-          en la alineación, como el iyengar, la diversidad es enorme.</p>
-          <p>
-          En esta guía podras ver los principales tipos de yoga para que puedas descubrir sus
-          beneficios, objetivos y características principales.Además, te
-          daremos consejos prácticos para identificar cuál es el más adecuado
-          para ti.
+          El yoga abarca una amplia variedad de prácticas, cada una con su propio enfoque y metodología. Desde estilos suaves como yoga prenatal para mujeres embarazadas que quieren seguir cuidando su cuerpo y mente o dinámicos, como el acroyoga o yoga aéreo, hasta otros más centrados en la alineación, como el iyengar, la diversidad es enorme.
+        </p>
+        <p>
+          En esta guía podrás ver los principales tipos de yoga para que puedas descubrir sus beneficios, objetivos y características principales. Además, te daremos consejos prácticos para identificar cuál es el más adecuado para ti.
         </p>
       </section>
-      <!-- Card Group -->
-      <section class="mt-4">
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="../img/9.png" class="card-img-top" alt="yoga prenatal" />
-              <div class="card-body">
-                <h5 class="card-title">Yoga Prenatal</h5>
-                <p class="card-text">
-                  La transformación a ser mamá es una aventura muy personal, con las practicas del yoga buscamos un lugar de serenidad, 
-                  equilibrio y bienestar que permite superar cualquier desafío. El yoga nos trae al momento presente.</p>
-                <a href="../index.html" class="btn btn-primary">MAS INFO</a>
-              </div>
+      <!-- Tarjetas -->
+      <section class="row mt-4" data-aos="fade-up" data-aos-delay="700">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="../img/9.png" class="card-img-top" alt="yoga prenatal" />
+            <div class="card-body">
+              <h5 class="card-title">Yoga Prenatal</h5>
+              <p class="card-text">La transformación a ser mamá es una aventura muy personal. Con las prácticas del yoga buscamos un lugar de serenidad, equilibrio y bienestar que permite superar cualquier desafío. El yoga nos trae al momento presente.</p>
+              <a href="../index.html" class="btn btn-primary">MAS INFO</a>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="../img/10.png" class="card-img-top" alt="yoga aéreo" />
-              <div class="card-body">
-                <h5 class="card-title">Yoga Aéreo</h5>
-                <p class="card-text">
-                  Un método artístico de crecimiento personal que aporta multitud de beneficios a quien se anima a realizarlo: controlar 
-                  el estrés, tonificar los músculos, combatir las fobias y aumentar la creatividad.</p>
-                <a href="../index.html" class="btn btn-primary">MAS INFO</a>
-              </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="../img/10.png" class="card-img-top" alt="yoga aéreo" />
+            <div class="card-body">
+              <h5 class="card-title">Yoga Aéreo</h5>
+              <p class="card-text">Un método artístico de crecimiento personal que aporta multitud de beneficios: controlar el estrés, tonificar los músculos, combatir fobias y aumentar la creatividad.</p>
+              <a href="../index.html" class="btn btn-primary">MAS INFO</a>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              <img src="../img/11.png" class="card-img-top" alt="acroyoga" />
-              <div class="card-body">
-                <h5 class="card-title">Acroyoga</h5>
-                <p class="card-text">
-                  El AcroYoga, fusiona las acrobacias, el yoga e incluso prácticas terapéuticas. 
-                  Una mezcla única que se centra en elementos como la consciencia corporal, la conexión del yoga
-                  y la belleza de las acrobacias.</p>
-                <a href="../index.html" class="btn btn-primary">MAS INFO</a>
-              </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="../img/11.png" class="card-img-top" alt="acroyoga" />
+            <div class="card-body">
+              <h5 class="card-title">Acroyoga</h5>
+              <p class="card-text">El AcroYoga fusiona las acrobacias, el yoga y prácticas terapéuticas. Una mezcla única enfocada en la consciencia corporal, la conexión del yoga y la belleza de las acrobacias.</p>
+              <a href="../index.html" class="btn btn-primary">MAS INFO</a>
             </div>
           </div>
         </div>
       </section>
-      <!-- Subscription -->
-      <form>
+      <!-- Formulario -->
+      <form data-aos="fade-up" data-aos-delay="800" class="mt-4">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="email" class="form-label">Dirección de email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca compartiremos tu email con nadie.</div>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password">
         </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <input type="checkbox" class="form-check-input" id="check">
+          <label class="form-check-label" for="check">Estoy de acuerdo</label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
       </form>
     </main>
     <footer class="text-center mt-4">
       <h4>&copy; Copyright 2025 Amanda Melacci</h4>
     </footer>
-    <!-- Bootstrap Script -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Bootstrap Bundle Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>

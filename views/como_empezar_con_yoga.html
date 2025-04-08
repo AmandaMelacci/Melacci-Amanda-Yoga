@@ -3,11 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi sitio web Yoga</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <!-- AOS Animate on Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/om1.png" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/style.css" />
+
+    <title>Yoga Terapeutico</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }  
+      body {
+        display: flex;
+        flex-direction: column;
+      } 
+      main {
+        flex: 1;
+      }
+      footer h4 {
+      font-size: 15px;
+      color: #0f0f0f;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+      footer {
+        background-color: #f8f9fa;
+        padding: 10px 0;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -30,40 +58,42 @@
       </nav>
     </header>
     <main class="container my-4">
-      <h1 class="text-center">¿Quién se puede beneficiar con Yoga Terapéutico?</h1>
-      <h2 class="text-center mb-4">¿Cómo comenzar con Yoga Terapéutico?</h2>
-      <section>
+      <h1 class="text-center" data-aos="fade-up">¿Quién se puede beneficiar con Yoga Terapéutico?</h1>
+      <h2 class="text-center mb-4" data-aos="fade-up" data-aos-delay="100">¿Cómo comenzar con Yoga Terapéutico?</h2>
+      <section data-aos="fade-up" data-aos-delay="200">
         <p>
           El yoga terapéutico puede beneficiar a cualquier persona, independientemente de su edad o nivel de habilidad.
           Sin embargo, es especialmente beneficioso para personas que tienen lesiones o enfermedades crónicas,
           como dolor de espalda, artritis o diabetes.
         </p>
         <p>
-          Si está interesado en comenzar con el yoga terapéutico, lo mejor es encontrar un instructor certificado en yoga terapéutico.
-          Un instructor de yoga terapéutico trabajará con usted para identificar sus necesidades específicas
-          y crear una práctica personalizada que se adapte a esas necesidades.
+          Si estás interesado en comenzar con el yoga terapéutico, lo mejor es encontrar un instructor certificado.
+          Este trabajará con vos para identificar tus necesidades específicas y crear una práctica personalizada.
         </p>
-      </section>
-      <!-- Images Section -->
+      </section>     
       <div class="d-flex flex-wrap justify-content-center my-4">
-        <img src="../img/7.png" alt="señora con gato" class="img-fluid m-2" style="width: 300px; height: 300px; object-fit: cover;" />
-        <img src="../img/8.png" alt="4 personas yoga terapeutico" class="img-fluid m-2" style="width: 300px; height: 300px; object-fit: cover;" />
-        <img src="../img/15.png" alt="grupo de niños yoguis" class="img-fluid m-2" style="width: 300px; height: 300px; object-fit: cover;" />
+        <img src="../img/7.png" alt="señora con gato" class="img-fluid m-2"
+          style="width: 300px; height: 300px; object-fit: cover;" data-aos="zoom-in" data-aos-delay="100" />
+        <img src="../img/8.png" alt="4 personas yoga terapeutico" class="img-fluid m-2"
+          style="width: 300px; height: 300px; object-fit: cover;" data-aos="zoom-in" data-aos-delay="200" />
+        <img src="../img/15.png" alt="grupo de niños yoguis" class="img-fluid m-2"
+          style="width: 300px; height: 300px; object-fit: cover;" data-aos="zoom-in" data-aos-delay="300" />
       </div>
-      <section>
+      <section data-aos="fade-up" data-aos-delay="300">
         <p>
-          Además, la naturaleza suave pero penetrante del yoga terapéutico trasciende las limitaciones de la edad y la forma física,
-          permitiendo así a las personas participar en una práctica que sea propicia para su fase única de la vida y su nivel de bienestar físico.
+          La naturaleza suave pero efectiva del yoga terapéutico trasciende edad y condición física,
+          permitiendo que todos puedan participar según su etapa vital.
         </p>
         <p>
-          Aprovechando la adaptabilidad e inclusividad inherentes al yoga terapéutico,
-          personas de todas las condiciones sociales pueden embarcarse en un viaje de autodescubrimiento, curación y bienestar holístico,
-          subrayando así su relevancia y aplicabilidad duraderas como modalidad versátil e integrada para la salud y el bienestar integrales.
+          Gracias a su adaptabilidad e inclusividad, personas de todas las realidades pueden embarcarse en un viaje de autodescubrimiento,
+          curación y bienestar integral.
         </p>
       </section>
-      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <!-- Carrusel -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-aos="fade-up" data-aos-delay="300">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
@@ -72,38 +102,41 @@
             <img src="../img/a.jpg" class="d-block w-100" alt="namaste">
             <div class="carousel-caption d-none d-md-block">
               <h5>Calma, es la clave.</h5>
-              <p>Relajacion plena.</p>
+              <p>Relajación plena.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img src="../img/d.jpg" class="d-block w-100" alt="piedras">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Expande tu energia vital.</h5>
-              <p>Somos energia, damos energia.</p>
+              <h5>Expande tu energía vital.</h5>
+              <p>Somos energía, damos energía.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="../img/e.jpg" class="d-block w-100" alt="respiro">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Respira profundo.</h5>
+              <h5>Respirá profundo.</h5>
               <p>Liberate de la negatividad.</p>
             </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
-    </main>
+    </main>   
     <footer class="text-center mt-4">
       <h4>&copy; Copyright 2025 Amanda Melacci</h4>
     </footer>
-    <!-- Bootstrap Script -->
+    <!-- Bootstrap Bundle Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>

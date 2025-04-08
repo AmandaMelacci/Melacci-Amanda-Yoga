@@ -6,23 +6,50 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
-  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet" />
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <title>Mi sitio web Yoga</title>
-  <link rel="icon" type="image/png" href="./img/om1.png" />
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/a6fae790af.js" crossorigin="anonymous"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-  <!-- Custom CSS lo borro y agrego  -->
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a6fae790af.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./img/om1.png" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Yoga Terapeutico</title>
+      <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+      footer h4 {
+      font-size: 15px;
+      color: #0f0f0f;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+    footer {
+      background-color: #f8f9fa;
+      padding: 10px 0;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <img id="logo" src="./img/om1.png" alt="Logo" class="d-inline-block align-text-top">
+        <img id="logo" src="./img/om1.png" alt="Logo" class="d-inline-block align-text-top" style="margin-right: 15px; object-fit: contain;" />
         <a class="navbar-brand active" href="index.html">Inicio</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -39,63 +66,59 @@
     </nav>
   </header>
   <main class="container">
-    <section class="text-center my-4">
+    <section class="text-center my-4" data-aos="fade-up">
       <h1>Yoga terapéutico</h1>
-      <h2>Equilibrio físico y armonización mental</h2>
-      <p>
+      <h2 data-aos="fade-up" data-aos-delay="100">Equilibrio físico y armonización mental</h2>
+      <p data-aos="fade-in" data-aos-delay="200">
         El yoga terapéutico es una práctica que utiliza posturas de yoga, respiración y 
         meditación para tratar y prevenir lesiones y enfermedades. 
         Esta práctica se enfoca en el individuo en lugar de en la postura en sí misma.
       </p>
     </section>
-    <!-- Image Group with Bootstrap Flex -->
     <div class="d-flex flex-wrap justify-content-center">
-      <img src="./img/1.png" alt="personas en grupo haciendo yoga" class="img-fluid m-2" style="width: 300px; height: 300px; object-fit: cover;" />
-      <img src="./img/2.png" alt="chica haciendo yoga" class="img-fluid m-2" style="width: 300px; height: 300px; object-fit: cover;" />
-      <img src="./img/12.png" alt="3 personas haciendo yoga" class="img-fluid m-2" style="width: 300px; height: 300px; object-fit: cover;" />
+      <img src="./img/1.png" alt="grupo haciendo yoga" class="img-fluid m-2" style="width: 300px; height: 300px; object-fit: cover;" data-aos="fade-right" />
+      <img src="./img/2.png" alt="chica haciendo yoga" class="img-fluid m-2" style="width: 300px; height: 300px; object-fit: cover;" data-aos="fade-up" />
+      <img src="./img/12.png" alt="3 personas haciendo yoga" class="img-fluid m-2" style="width: 300px; height: 300px; object-fit: cover;" data-aos="fade-left" />
     </div>
-    <section class="my-4">
+    <section class="my-4" data-aos="fade-in">
       <p>
         Esta clase de yoga va más allá del mero ejercicio físico: su objetivo es mejorar y 
         sanar tanto nuestro cuerpo como nuestra mente. Este estilo único de yoga está diseñado 
         específicamente para tratar dolencias y problemas de salud comunes, lo que lo convierte en un 
         valioso complemento de los tratamientos médicos tradicionales.<br />
-
         Al adaptar las posturas y las prácticas a las necesidades individuales, el yoga terapéutico puede 
         aportar equilibrio y armonía a nuestro bienestar físico, mental y emocional.<br />
         Les compartimos un video con música relajante para que puedan disfrutar de la paz y tranquilidad.
       </p>
-      <h2>¡Les dejamos un video para empezar con esta hermosa práctica!</h2>
-      <div class="d-flex justify-content-center">
+      <h2 data-aos="fade-up">¡Les dejamos un video para comenzar con esta hermosa práctica!</h2>
+      <div class="d-flex justify-content-center" data-aos="zoom-in">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/la7fh937ej8?si=yiq8yyKmAn9vPYER" 
           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen class="my-3">
         </iframe>
       </div>
     </section>
-    <article class="text-center my-4">
-      <a target="_blank" href="https://www.google.com.ar/">
-        <i class="fa-brands fa-google fa-2x mx-3"></i>
-      </a>
-      <a href="https://facebook.com" target="_blank">
-        <i class="fa-brands fa-facebook fa-2x mx-3"></i>
-      </a>
-      <a href="https://instagram.com" target="_blank">
-        <i class="fa-brands fa-instagram fa-2x mx-3"></i>
-      </a>
-    </article>
-    <footer class="text-center mt-4">
-      <h4>&copy; Copyright 2025 Amanda Melacci</h4>
-    </footer>
-  </main>
-  <!-- Bootstrap Script -->
+  </main> 
+    <footer class="text-center mt-5 py-4" style="background-color: white; color: black;" data-aos="fade-up">
+      <!-- Redes sociales -->
+      <div class="mb-3">
+        <a target="_blank" href="https://www.google.com.ar/">
+          <i class="fa-brands fa-google fa-2x mx-3"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <i class="fa-brands fa-facebook fa-2x mx-3"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <i class="fa-brands fa-instagram fa-2x mx-3"></i>
+        </a>
+      </div>
+      <h4>&copy; 2025 Amanda Melacci - Todos los derechos reservados</h4>
+    </footer>   
+  <!-- AOS Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const logo = document.getElementById('logo');
-      logo.classList.add('animate__animated', 'animate__zoomIn'); // Podés probar otras animaciones también
-    });
   </script>
 </body>
 </html>
