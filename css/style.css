@@ -4,10 +4,6 @@
   margin: 0;
   padding: 0;
 }
-
-/* variables*/
-/* mixin */
-/* extend */
 .img-square {
   width: 300px;
   height: 300px;
@@ -34,7 +30,7 @@ h2 {
 }
 
 p {
-  color: black;
+  color:  #555;
   font-size: 1.5em;
   margin: 20px;
 }
@@ -80,7 +76,7 @@ header nav.navbar img {
 header nav.navbar .navbar-brand {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #333;
+  color: #555;
   text-decoration: none;
 }
 header nav.navbar .navbar-brand:hover {
@@ -99,7 +95,7 @@ header nav.navbar .navbar-collapse .navbar-nav {
 header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #333;
+  color: #555;
   text-decoration: none;
 }
 header nav.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
@@ -146,7 +142,7 @@ main.container iframe {
 }
 main.container article a {
   margin: 0 1rem;
-  color: #333;
+  color: #555;
   font-size: 1rem;
 }
 main.container article a:hover {

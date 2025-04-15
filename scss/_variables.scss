@@ -1,25 +1,25 @@
 html,
 body {
-    background-color:  #fcedd8;
+    background-color:  rgb(161, 199, 187);
     font-family: "Poppins", sans-serif;
   }
   h1 {
-    color: #5e473a;
+    color: rgb(19, 117, 96);
     text-align: center;
     font-size: 40px;  
   }
   h2 {
-    color: #b27c66;
+    color: rgb(35, 139, 117);
     font-size: 30px;
     margin: 10px;
   }
   p {
-    color: #444;
+    color: #555;
     font-size: 1.5em;
     margin: 20px;
   }
   h3 {
-    color: #b27c66;
+    color:rgb(35, 139, 117);
     margin: 30px;
     text-align: center;
   }
@@ -32,15 +32,15 @@ body {
       margin-bottom: 2rem;
   
       h1{
-       color: #5e473a;
+       color:rgb(19, 117, 96);
       }
       
       h2 {
-        color:#6db193;
+        color:rgb(35, 139, 117);
       }
   
       p {
-        color: #444;
+        color: #555;
         line-height: 1.6;
       }
     }  

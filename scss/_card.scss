@@ -6,11 +6,12 @@
       object-fit: cover;
     }      
     .btn-primary {
-      background-color:#6db193;
-      border-color:#6db193;
+      background-color:rgb(35, 139, 117);
+      border-color:rgb(35, 139, 117);
       &:hover {
-        background-color:  #5a9f80;
-        border-color:  #5a9f80;
+        background-color: rgb(24.7413793103, 98.2586206897, 82.7068965517);
+        border-color: rgb(24.7413793103, 98.2586206897, 82.7068965517);
       }
     }
   }
+  

@@ -5,13 +5,6 @@
     margin: 0;
     padding: 0;
 }
-
-/* variables*/
-$main-background: rgb(161, 199, 187);
-$margin-top-footer: 0.5rem;
-$color-h1:rgb(19, 117, 96);
-$color-h2:rgb(35, 139, 117);
-
 /* mixin */
 @mixin flexbox ($direccion, $jcontent, $align){
     display: flex;

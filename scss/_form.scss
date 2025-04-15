@@ -2,7 +2,7 @@ form {
     max-width: 400px; 
     margin: 0 auto; 
     padding: 1.5rem;
-    background-color:#ffffff; 
+    background-color:#f8f9fa; 
     border-radius: 8px; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);      
     .form-label {
@@ -14,11 +14,11 @@ form {
     }      
     button[type="submit"] {
       width: 100%; 
-      background-color:#6db193;
-      border-color: #6db193;
+      background-color:rgb(35, 139, 117);
+      border-color: rgb(35, 139, 117);
       &:hover {
-        background-color:  #5a9f80;
-        border-color:  #5a9f80;
+        background-color:  rgb(24.7413793103, 98.2586206897, 82.7068965517);
+        border-color:  rgb(24.7413793103, 98.2586206897, 82.7068965517);
       }
     }
   }
